@@ -19,7 +19,7 @@ const Home = () => {
         if (!isLoading && !currentUser) {
             router.push("/login");
         }
-    }, [currentUser, isLoading]);
+    }, [currentUser, isLoading , router]);
 
     return !currentUser ? (
         <Loader />

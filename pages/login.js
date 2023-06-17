@@ -26,7 +26,7 @@ const Login = () => {
 
   useEffect(() => {
     if (!isLoading && currentUser) {
-      router.push("/");
+      router.replace("/");
     }
   }, [currentUser, isLoading, router]);
 
